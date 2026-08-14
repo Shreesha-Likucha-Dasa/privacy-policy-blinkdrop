@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlinkDrop — Transfer Files Without Cables or Cloud</title>
+<meta name="description" content="Transfer files between your Android phone and any browser over local Wi-Fi. No cable, no cloud, no account and no extra software required.">
+<link rel="canonical" href="https://blinkdrop.app/">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlinkDrop">
+<meta property="og:title" content="BlinkDrop — Transfer Files Without Cables or Cloud">
+<meta property="og:description" content="Transfer files between your Android phone and any browser over local Wi-Fi. No cable, no cloud, no account and no extra software required.">
+<meta property="og:image" content="assets/img/og-image.png">
+<meta property="og:url" content="https://blinkdrop.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BlinkDrop — Transfer Files Without Cables or Cloud">
+<meta name="twitter:description" content="Transfer files between your Android phone and any browser over local Wi-Fi. No cable, no cloud, no account and no extra software required.">
+<meta name="twitter:image" content="assets/img/og-image.png">
+<meta name="theme-color" content="#0a0e14">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preload" as="image" href="assets/img/04_qr_address.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "BlinkDrop",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Transfer files between your Android phone and any browser over local Wi-Fi — no cable, no cloud, no account and no extra software required.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "120" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Does the other device need BlinkDrop?","acceptedAnswer":{"@type":"Answer","text":"No. It only needs a web browser."}},
+    {"@type":"Question","name":"Does BlinkDrop use cloud storage?","acceptedAnswer":{"@type":"Answer","text":"No. File transfers are performed over the local network."}},
+    {"@type":"Question","name":"Do I need an account?","acceptedAnswer":{"@type":"Answer","text":"No."}},
+    {"@type":"Question","name":"Do both devices need to be on the same Wi-Fi?","acceptedAnswer":{"@type":"Answer","text":"Yes, the devices need to be able to reach each other over the local network."}},
+    {"@type":"Question","name":"Is the connection protected?","acceptedAnswer":{"@type":"Answer","text":"BlinkDrop uses a PIN authentication step before the browser can access shared phone content."}},
+    {"@type":"Question","name":"Can I send files back to my phone?","acceptedAnswer":{"@type":"Answer","text":"Yes."}},
+    {"@type":"Question","name":"Can I prevent the browser from browsing my phone?","acceptedAnswer":{"@type":"Answer","text":"Yes. BlinkDrop provides a privacy control for browser access to phone content."}}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="BlinkDrop home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#58a6ff"/><path d="M35.5 10 13 34.5h12.6L22.2 54 43.5 28.5H30.9z" fill="#fff"/></svg>
+      <span class="brand-name">BlinkDrop</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="#download">Get BlinkDrop</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#how-it-works">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-primary btn-block" href="#download">Get BlinkDrop</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="pill"><span class="pill-dot"></span> Local Wi-Fi · No cloud · No account</span>
+        <h1>Move files without the hassle.</h1>
+        <p class="hero-sub">Transfer files between your Android phone and any device over local Wi-Fi — directly from your browser.</p>
+        <p class="hero-tags"><span>No cables</span><span>No cloud</span><span>No account</span><span>No extra software</span></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#download">Get BlinkDrop</a>
+          <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/><path d="M5 13v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M12 20 9 8"/></svg>
+          <p><strong>Nothing to install on the other device.</strong> Your computer only needs a browser.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <img src="assets/img/04_qr_address.webp" alt="" loading="eager" fetchpriority="high">
+        </div>
+        <div class="beam">
+          <div class="beam-dot"></div>
+          <div class="beam-bolt"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+        </div>
+        <div class="laptop">
+          <div class="laptop-bar"><span></span><span></span><span></span><i></i></div>
+          <img src="assets/img/09_web_workspace.webp" alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BROWSER ADVANTAGE ============================ -->
+  <section class="browser-band">
+    <div class="container">
+      <div class="browser-band-copy">
+        <h2>Your computer only needs a browser.</h2>
+        <p>Chrome, Edge, Safari, Firefox — whichever one you already use. BlinkDrop turns your phone into a private local file-sharing hub, and any browser can connect.</p>
+      </div>
+      <ul class="browser-row" aria-label="Works in any modern browser">
+        <li><span class="b-icon b-chrome" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M3.5 9.5h17M3.5 14.5h17"/></svg></span>Chrome</li>
+        <li><span class="b-icon b-edge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-9 9c-2.2 0-4.2-.8-5.8-2.1C4 17 4.5 10 8 6.5 11.5 3 18 3 19 6c.5 1.5.5 3 2 6Z"/></svg></span>Edge</li>
+        <li><span class="b-icon b-safari" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/><path d="m9 9 3.5 3.5"/></svg></span>Safari</li>
+        <li><span class="b-icon b-firefox" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c4.4 0 8-3.1 8-7.5 0-3.5-2-6.5-5-8 0 1.5-.4 2.5-1.2 3.5C12.5 7.5 10.5 6.5 8 6.5c.8 2.3.2 4-1.8 5.5C5 13 4 15 4 16.5 4 19 7.6 21 12 21Z"/><circle cx="13.5" cy="15.5" r="1.2"/></svg></span>Firefox</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ HOW IT WORKS ============================ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>From phone to browser in seconds.</h2>
+        <p>Three steps. No sign-up. No cables. No cloud.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-visual">
+            <div class="mini-phone"><img src="assets/img/01_home.webp" alt="BlinkDrop home screen with Start Sharing button" loading="lazy"></div>
+            <span class="step-tap">Tap <strong>Start Sharing</strong></span>
+          </div>
+          <div class="step-copy">
+            <span class="step-num">1</span>
+            <h3>Start sharing</h3>
+            <p>Open BlinkDrop and tap <strong>Start Sharing</strong>. Your phone becomes a local file server on your Wi-Fi.</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-visual">
+            <div class="mini-phone"><img src="assets/img/02_share_pin.webp" alt="PIN shown on the phone" loading="lazy"></div>
+            <span class="step-chip">PIN · 4827</span>
+          </div>
+          <div class="step-copy">
+            <span class="step-num">2</span>
+            <h3>Connect</h3>
+            <p>Scan the QR code or open the local address in a browser, then enter the PIN shown on your phone.</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-visual">
+            <div class="mini-phone mini-browser"><img src="assets/img/10_web_files.webp" alt="Files listed in the browser" loading="lazy"></div>
+            <span class="step-chip step-chip-green">✓ Connected</span>
+          </div>
+          <div class="step-copy">
+            <span class="step-num">3</span>
+            <h3>Transfer</h3>
+            <p>Browse, preview and transfer files in both directions. No account. No cable. No cloud.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ INTERACTIVE DEMO ============================ -->
+  <section class="section demo" id="demo">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Live demo</span>
+        <h2>Watch the connection happen.</h2>
+        <p>A quiet walk-through of sharing from your phone to a browser.</p>
+      </header>
+
+      <div class="demo-stage" id="demoStage">
+        <div class="demo-device demo-phone" aria-hidden="true">
+          <div class="device-label">Phone</div>
+          <div class="phone demo-screen-frame">
+            <div class="phone-notch"></div>
+            <div class="demo-screen" id="demoPhoneScreen"></div>
+          </div>
+        </div>
+
+        <div class="demo-mid" aria-hidden="true">
+          <div class="demo-arrow"></div>
+          <div class="demo-bolt"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+        </div>
+
+        <div class="demo-device demo-browser" aria-hidden="true">
+          <div class="device-label">Browser</div>
+          <div class="laptop demo-screen-frame">
+            <div class="laptop-bar"><span></span><span></span><span></span><i></i></div>
+            <div class="demo-screen" id="demoBrowserScreen"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-controls" role="group" aria-label="Demo controls">
+        <button class="demo-btn" id="demoPrev" aria-label="Previous step">←</button>
+        <ol class="demo-dots" id="demoDots"></ol>
+        <button class="demo-btn" id="demoNext" aria-label="Next step">→</button>
+      </div>
+      <p class="demo-caption" id="demoCaption"></p>
+    </div>
+  </section>
+
+  <!-- ============================ NO APP ON OTHER DEVICE ============================ -->
+  <section class="section" id="no-app">
+    <div class="container">
+      <div class="statement">
+        <h2>No app on the other device.</h2>
+        <p class="statement-sub">BlinkDrop turns your phone into a private local file-sharing hub. Open a browser on another device and start transferring.</p>
+      </div>
+      <ul class="devices">
+        <li><span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="7" rx="1"/><rect x="13" y="4" width="8" height="7" rx="1"/><rect x="3" y="13" width="8" height="7" rx="1"/><rect x="13" y="13" width="8" height="7" rx="1"/></svg></span>Windows</li>
+        <li><span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>macOS</li>
+        <li><span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m6 8 3 3-3 3M11 14h7"/></svg></span>Linux</li>
+        <li><span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M3 16h18M8 20h8"/></svg></span>Chromebook</li>
+        <li><span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></span>Tablet</li>
+        <li><span class="d-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10.5 18h3"/></svg></span>Phone</li>
+      </ul>
+      <p class="devices-note">If it has a browser, it can connect.</p>
+    </div>
+  </section>
+
+  <!-- ============================ FEATURES ============================ -->
+  <section class="section" id="features">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Features</span>
+        <h2>Simple. Fast. Private.</h2>
+        <p>Everything BlinkDrop does, and nothing you don't need.</p>
+      </header>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 10V7a5 5 0 0 1 10 0v3"/><rect x="4" y="10" width="16" height="10" rx="2"/></svg></span>
+          <h3>No cables</h3>
+          <p>Transfer over your existing local Wi-Fi network — nothing to plug in.</p>
+        </article>
+        <article class="feature">
+          <span class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M8.5 8.5 12 12l3.5-3.5"/><path d="M4 13v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/><path d="M4 13h16" stroke-dasharray="0"/></svg></span>
+          <h3>No cloud</h3>
+          <p>Files stay on your local network instead of being uploaded to a cloud service.</p>
+        </article>
+        <article class="feature">
+          <span class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18"/><path d="M9 9v12"/></svg></span>
+          <h3>No extra software</h3>
+          <p>The other device only needs a browser — any browser, on any device.</p>
+        </article>
+        <article class="feature">
+          <span class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.5"/></svg></span>
+          <h3>Secure connection</h3>
+          <p>A PIN is required before a connected browser can access shared content.</p>
+        </article>
+        <article class="feature">
+          <span class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17 7 7 17"/><path d="M7 7l10 10"/></svg></span>
+          <h3>Two-way transfer</h3>
+          <p>Send files from your phone, or send files back to your phone from the browser.</p>
+        </article>
+        <article class="feature">
+          <span class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg></span>
+          <h3>Privacy control</h3>
+          <p>Choose whether the connected browser can browse your phone's files.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PRIVACY ============================ -->
+  <section class="section" id="privacy">
+    <div class="container">
+      <div class="privacy-grid">
+        <div class="privacy-copy">
+          <span class="eyebrow">Privacy</span>
+          <h2>Your files stay yours.</h2>
+          <p class="privacy-sub">BlinkDrop is built around local transfer. Files are transferred directly between your devices over the local network — no cloud upload is required, and no account is needed.</p>
+          <ul class="check-list">
+            <li>Files move directly between your devices</li>
+            <li>No cloud upload required</li>
+            <li>No account, no sign-up</li>
+          </ul>
+        </div>
+        <div class="privacy-diagram" aria-hidden="true">
+          <div class="pd-node pd-phone"><span class="pd-ico"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10.5 18h3"/></svg></span><b>Phone</b></div>
+          <div class="pd-wire"></div>
+          <div class="pd-node pd-wifi"><span class="pd-ico"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg></span><b>Local Wi-Fi</b><em>No cloud in between</em></div>
+          <div class="pd-wire"></div>
+          <div class="pd-node pd-pc"><span class="pd-ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><b>Browser</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SECURITY ============================ -->
+  <section class="section" id="security">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Security</span>
+        <h2>Connected doesn't mean exposed.</h2>
+        <p>Before a browser can access your shared content, it has to get past a PIN — the one shown only on your phone.</p>
+      </header>
+
+      <div class="security-stage">
+        <div class="sec-phone" aria-hidden="true">
+          <div class="mini-phone"><img src="assets/img/02_share_pin.webp" alt="PIN shown on the phone" loading="lazy"></div>
+          <div class="sec-pin">PIN · 4827</div>
+        </div>
+        <div class="sec-flow" aria-hidden="true">
+          <div class="sec-arrow"></div>
+        </div>
+        <div class="sec-browser" aria-hidden="true">
+          <div class="mini-phone mini-browser"><img src="assets/img/08_web_connect.webp" alt="Browser PIN entry screen" loading="lazy"></div>
+          <div class="sec-auth">Enter PIN → Authenticated</div>
+        </div>
+      </div>
+      <p class="section-footnote">Tip: share on networks you trust, and stop sharing when you're done.</p>
+    </div>
+  </section>
+
+  <!-- ============================ PRIVACY CONTROL ============================ -->
+  <section class="section" id="privacy-control">
+    <div class="container">
+      <div class="privacy-grid privacy-grid-rev">
+        <div class="privacy-copy">
+          <span class="eyebrow">Privacy control</span>
+          <h2>You decide what the browser can see.</h2>
+          <p class="privacy-sub">When you only want to <em>receive</em> a file, you can switch off browser access to your phone's contents — so the other person can send to you without browsing your files.</p>
+          <blockquote class="chat">
+            <p><strong>Person A:</strong> “Send me that file.”</p>
+            <p><strong>Person B:</strong> “Sure — but you don't need access to my phone.”</p>
+          </blockquote>
+        </div>
+        <div class="toggle-demo" aria-hidden="true">
+          <div class="toggle-card">
+            <div class="toggle-row">
+              <div>
+                <b>Browser access</b>
+                <small id="toggleState">Allow browser to browse phone files</small>
+              </div>
+              <button class="switch" id="toggleSwitch" role="switch" aria-checked="true" aria-label="Browser access">
+                <span class="switch-thumb"></span>
+              </button>
+            </div>
+            <div class="toggle-cards">
+              <img src="assets/img/05_browser_access_on.webp" alt="" loading="lazy" id="toggleImgOn">
+              <img src="assets/img/06_browser_hidden.webp" alt="" loading="lazy" id="toggleImgOff" hidden>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ USE CASES ============================ -->
+  <section class="section" id="use-cases">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Use cases</span>
+        <h2>Made for those annoying file-transfer moments.</h2>
+      </header>
+      <ul class="usecase-grid">
+        <li class="usecase"><b>Phone → laptop</b><p>Move photos, videos and documents without a cable.</p></li>
+        <li class="usecase"><b>Laptop → phone</b><p>Send files back to your phone directly from the browser.</p></li>
+        <li class="usecase"><b>Someone else's computer</b><p>No software installation required — just a browser.</p></li>
+        <li class="usecase"><b>Large files</b><p>Use your local network instead of uploading to cloud storage first.</p></li>
+        <li class="usecase"><b>Quick sharing</b><p>Scan the QR code and connect in seconds.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ COMPARISON ============================ -->
+  <section class="section" id="comparison">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Why BlinkDrop</span>
+        <h2>Why make file transfer complicated?</h2>
+      </header>
+      <div class="compare-grid">
+        <div class="compare-col compare-hero-col">
+          <h3>BlinkDrop</h3>
+          <ul class="check-list">
+            <li>No cable</li>
+            <li>No cloud required</li>
+            <li>No account</li>
+            <li>No software on other device</li>
+            <li>Local transfer</li>
+            <li>Browser based</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h3>Cable</h3>
+          <ul class="x-list">
+            <li>Needs a cable</li>
+            <li>Needs compatible ports</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h3>Cloud storage</h3>
+          <ul class="x-list">
+            <li>Uploads to a server</li>
+            <li>Often needs an account</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h3>Installing software</h3>
+          <ul class="x-list">
+            <li>Install on both devices</li>
+            <li>Extra setup</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ VIDEO ============================ -->
+  <section class="section" id="video">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Demo</span>
+        <h2>See BlinkDrop in action.</h2>
+        <p>Start sharing → QR → browser → PIN → transfer, in about 27 seconds.</p>
+      </header>
+      <div class="video-wrap">
+        <video id="demoVideo" class="video-frame" controls preload="none" poster="assets/img/video-poster.webp" playsinline>
+          <source src="assets/img/demo.mp4" type="video/mp4">
+          Your browser doesn't support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA ============================ -->
+  <section class="section cta" id="download">
+    <div class="container cta-inner">
+      <h2>Ready to stop emailing files to yourself?</h2>
+      <p>Install BlinkDrop and move files directly between your devices.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.shreesha.blinkdrop" rel="noopener">Get BlinkDrop</a>
+        <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works</a>
+      </div>
+      <p class="cta-hint">Free on Google Play · Android 8.0+</p>
+    </div>
+  </section>
+
+  <!-- ============================ FAQ ============================ -->
+  <section class="section" id="faq">
+    <div class="container container-narrow">
+      <header class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered.</h2>
+      </header>
+      <div class="faq">
+        <details>
+          <summary>Does the other device need BlinkDrop?</summary>
+          <p>No. It only needs a web browser.</p>
+        </details>
+        <details>
+          <summary>Does BlinkDrop use cloud storage?</summary>
+          <p>No. File transfers are performed over the local network.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No.</p>
+        </details>
+        <details>
+          <summary>Do both devices need to be on the same Wi-Fi?</summary>
+          <p>Yes, the devices need to be able to reach each other over the local network.</p>
+        </details>
+        <details>
+          <summary>Is the connection protected?</summary>
+          <p>BlinkDrop uses a PIN authentication step before the browser can access shared phone content.</p>
+        </details>
+        <details>
+          <summary>Can I send files back to my phone?</summary>
+          <p>Yes.</p>
+        </details>
+        <details>
+          <summary>Can I prevent the browser from browsing my phone?</summary>
+          <p>Yes. BlinkDrop provides a privacy control for browser access to phone content.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FINAL CTA ============================ -->
+  <section class="final-cta">
+    <div class="container">
+      <svg class="brand-mark-lg" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#58a6ff"/><path d="M35.5 10 13 34.5h12.6L22.2 54 43.5 28.5H30.9z" fill="#fff"/></svg>
+      <h2>BlinkDrop</h2>
+      <p class="final-tag">No cable. No cloud. No extra software.</p>
+      <p class="final-sub">Just your files, between your devices.</p>
+      <a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.shreesha.blinkdrop" rel="noopener">Get BlinkDrop</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#58a6ff"/><path d="M35.5 10 13 34.5h12.6L22.2 54 43.5 28.5H30.9z" fill="#fff"/></svg>
+        <span class="brand-name">BlinkDrop</span>
+      </a>
+      <p class="footer-tag">Transfer files between your phone and any browser — over local Wi-Fi.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:shreeshaIbhat@gmail.com">Contact</a>
+      <a href="https://play.google.com/store/apps/details?id=com.shreesha.blinkdrop" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 BlinkDrop</p>
+    <!-- TODO: add a Terms of Service link when that page exists -->
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
